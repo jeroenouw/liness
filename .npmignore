@@ -1,0 +1,21 @@
+# Relevant files
+!lib/**
+
+# Unrelevant files
+src/**
+.gitignore
+.github/
+.nyc_output
+.vscode/
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+package-lock.json
+tsconfig.json
+tslint.json
+docs/
+demo/
+lib/**/*.spec.js
+lib/**/**.d.ts
+*.gif
+*.md
+test/
