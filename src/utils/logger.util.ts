@@ -23,7 +23,7 @@ export const showError = (message: string | Error): void => {
 }
 
 export const showWarning = (message: string): void => {
-    console.error(yellow(ConsoleMessage.WARNING) + message);
+    console.warn(yellow(ConsoleMessage.WARNING) + message);
 }
 
 export const showSuccess = (message: string): void => {
@@ -49,5 +49,5 @@ export const showEmptyLines = (info: Info): void => {
 }
 
 export const showTotalFiles = (info: Info, initialTime: number): void => {
-    console.info(cyan(`${info.fileInfo}`) + ` - total files, checked in ${getExecutionTime(initialTime)}` + newLine + newLine);
+    console.info(cyan(`${info.fileInfo}`) + ` - total files, calculated in ${getExecutionTime(initialTime)}` + newLine + newLine);
 }

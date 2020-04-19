@@ -1,6 +1,6 @@
 {
   "name": "liness",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI to calculate amount of lines used in your current project",
   "author": "Jeroen Ouwehand",
   "repository": "https://github.com/jeroenouw/liness",
@@ -40,7 +40,7 @@
     "tslib": "^1.11.1"
   },
   "devDependencies": {
-    "@liftr/tscov": "^1.4.4",
+    "@liftr/tscov": "^1.4.6",
     "@types/chai": "^4.2.11",
     "@types/figlet": "^1.2.0",
     "@types/fs-extra": "^8.1.0",

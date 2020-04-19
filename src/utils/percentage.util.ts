@@ -13,8 +13,9 @@ const getColorPercentage = (succesCondition: boolean, warningCondition: boolean,
 }
 
 export const getWrittenPercentage = (info: Info): string => {
+    const { lineInfo: { written, total } }  =  info;
     const tresholdPercentage = 75;
-    const percentage = getPercentage(info.lineInfo.written, info.lineInfo.total);
+    const percentage = getPercentage(written, total);
 
     return getColorPercentage(
         percentage >= (tresholdPercentage + 10), 
@@ -24,8 +25,9 @@ export const getWrittenPercentage = (info: Info): string => {
 }
 
 export const getEmptyPercentage = (info: Info): string => {
+    const { lineInfo: { empty, total } }  =  info;
     const tresholdPercentage = 25;
-    const percentage = getPercentage(info.lineInfo.empty, info.lineInfo.total);
+    const percentage = getPercentage(empty, total);
 
     return getColorPercentage(
         percentage <= (tresholdPercentage - 10), 

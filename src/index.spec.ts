@@ -1,12 +1,12 @@
 import sinon from 'sinon';
 import { expect } from 'chai';
-import { liness } from './liness';
+import { index } from './index';
 import * as logger from './utils/logger.util';
 import * as timer from './utils/timer.util';
-import * as info from './line-reader';
+import * as info from './liness';
 import { Info } from './models/info';
 
-describe('src/liness', () => {
+describe('src/index', () => {
     let sandbox: sinon.SinonSandbox;
     let showTitleAndBannerStub: sinon.SinonStub;
     let showStartCheckingStub: sinon.SinonStub;
@@ -50,7 +50,7 @@ describe('src/liness', () => {
         showEmptyLinesStub = sandbox.stub(logger, 'showEmptyLines');
         showTotalFilesStub = sandbox.stub(logger, 'showTotalFiles');
 
-        liness();
+        index();
         expect(showTitleAndBannerStub).to.be.calledOnce;
         expect(showStartCheckingStub).to.be.calledOnce;
 
