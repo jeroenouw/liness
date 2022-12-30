@@ -49,7 +49,7 @@
     "@types/sinon": "^9.0.0",
     "@types/sinon-chai": "^3.2.4",
     "chai": "^4.2.0",
-    "mocha": "^7.1.1",
+    "mocha": "^10.2.0",
     "mocha-junit-reporter": "^1.23.3",
     "nyc": "^15.0.1",
     "sinon": "^9.0.2",
